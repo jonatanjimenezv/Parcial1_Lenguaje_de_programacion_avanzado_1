@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Información del proyecto -->
+	<groupId>com.actividad</groupId>
+	<artifactId>actividad</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>actividad</name>
+	<description>Proyecto Spring Boot con Spring Security</description>
+
+	<!-- Parent de Spring Boot -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.4.2</version>
+		<relativePath/> <!-- Busca el parent en el repositorio -->
+	</parent>
+
+	<!-- Propiedades -->
+	<properties>
+		<java.version>17</java.version> <!-- Versión de Java -->
+	</properties>
+
+	<!-- Dependencias -->
+	<dependencies>
+		<!-- Spring Boot Starter Web (para aplicaciones web) -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- Spring Boot Starter Security (para seguridad) -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<!-- Spring Boot Starter Test (para pruebas) -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<!-- Build y plugins -->
+	<build>
+		<plugins>
+			<!-- Plugin de Spring Boot para empaquetar y ejecutar la aplicación -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>
